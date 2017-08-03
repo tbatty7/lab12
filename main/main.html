@@ -1,0 +1,9 @@
+<section ng-repeat="post in posts | limitTo: 10" >
+<img src="{{post.data.thumbnail}}">
+<input type="checkbox" name="" ng-model="post.favorite"> <!--using post. in front of this variable name 
+causes it to be added to the array so the checkbox persists when you switch views back and forth from favorites.-->
+<h4>{{post.data.title}}</h4>
+<p>{{post.data.author}}</p>
+
+</section>
+<button ng-click="saveFavorites(post.favorite)">Favorites</button>

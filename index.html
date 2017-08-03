@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lab 12</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div ng-app="reddit">
+Angular test: 2 + 2 = {{2+2}}
+	<nav>
+		<a href="#main">Main</a>
+		<a href="#favorites">Favorites</a>
+	</nav>
+	<ng-view></ng-view>
+</div>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="main/main.controller.js"></script>
+	<script type="text/javascript" src="favorites/fav.controller.js"></script>
+	<script type="text/javascript" src="factories/reddit.factory.js"></script>
+</body>
+</html>
